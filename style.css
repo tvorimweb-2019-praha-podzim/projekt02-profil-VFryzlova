@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
 
 /*
  BARVY
@@ -13,7 +19,90 @@ html { box-sizing: border-box; }
  twitter    #1da1f2
 */
 
-
 body {
     background-color: #bdc3c7;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.profil {
+    width: 250px;
+    background-color: #31363b;
+    margin: 20px;
+    color: rgb(212, 212, 212);
+    box-shadow: 3px 3px 5px #00000046;
+}
+
+.foto {
+    width: 250px;
+}
+
+.logo {
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    background-color: #b92e81;
+    border-radius: 100%;
+    box-shadow: 3px 3px 5px #00000046;
+}
+
+.obsah {
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.jmeno {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.odkazy {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 0px;
+    text-align: center;
+}
+
+.odkazy li {
+    list-style-type: none;
+}
+
+.odkazy li a {
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+}
+
+.portfolio {
+    border-bottom: 1px solid #3f464d;
+    border-top: 1px solid #3f464d;
+}
+
+.facebook {
+    width: 50%;
+    float: left;
+    border-right: 1px solid #3f464d;
+}
+
+.facebook a:hover {
+    background-color: #3b5998;
+}
+
+.twitter {
+    width: 50%;
+    float: right;
+}
+
+.twitter a:hover {
+    background-color: #1da1f2;
+}
+
+.portfolio a:hover {
+    background-color: #e74c3c;
 }
